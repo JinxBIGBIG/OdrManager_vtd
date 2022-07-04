@@ -1,0 +1,3 @@
+C:\cmake-3.19.3-win64-x64\bin\cmake.exe -E rm -f CMakeFiles\OpenDrive.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\OpenDrive.dir/objects.a @CMakeFiles\OpenDrive.dir\objects1.rsp
+C:\MinGW\bin\g++.exe -shared -o libOpenDrive.dll -Wl,--out-implib,libOpenDrive.dll.a -Wl,--major-image-version,0,--minor-image-version,0 -Wl,--whole-archive CMakeFiles\OpenDrive.dir/objects.a -Wl,--no-whole-archive @CMakeFiles\OpenDrive.dir\linklibs.rsp

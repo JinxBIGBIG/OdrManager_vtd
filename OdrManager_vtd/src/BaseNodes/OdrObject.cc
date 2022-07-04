@@ -1,0 +1,100 @@
+
+#include "OdrObject.hh"
+#include "OdrReaderXML.hh"
+#include "OdrRoadHeader.hh"
+#include "OdrGeoHeader.hh"
+#include "OdrGeoNode.hh"
+#include "OdrRepeat.hh"
+#include "OdrElevation.hh"
+#include <stdio.h>
+#include <math.h>
+namespace OpenDrive{Object::Object():Node("\x4f\x62\x6a\x65\x63\x74"){mOpcode=
+ODR_OPCODE_OBJECT;mLevel=1;}Object::Object(Object*Nf2Ao):Node(Nf2Ao){mType=Nf2Ao
+->mType;mName=Nf2Ao->mName;mId=Nf2Ao->mId;mIdAsString=Nf2Ao->mIdAsString;mS=
+Nf2Ao->mS;mT=Nf2Ao->mT;mZ=Nf2Ao->mZ;mLength=Nf2Ao->mLength;mDir=Nf2Ao->mDir;
+mSizeX=Nf2Ao->mSizeX;mSizeY=Nf2Ao->mSizeY;mRadius=Nf2Ao->mRadius;mSizeZ=Nf2Ao->
+mSizeZ;mHdg=Nf2Ao->mHdg;mPitch=Nf2Ao->mPitch;mRoll=Nf2Ao->mRoll;mHasOutline=
+Nf2Ao->mHasOutline;mInX=Nf2Ao->mInX;mInY=Nf2Ao->mInY;mInZ=Nf2Ao->mInZ;mInH=Nf2Ao
+->mInH;mValue=Nf2Ao->mValue;mHasRepeat=Nf2Ao->mHasRepeat;mSubType=Nf2Ao->
+mSubType;mIsDynamic=Nf2Ao->mIsDynamic;mIsCircular=Nf2Ao->mIsCircular;}Object::~
+Object(){}void Object::printData()const{fprintf(stderr,
+"\x20\x20\x20\x20\x54\x79\x70\x65\x3a\x20\x20\x20\x20\x20\x20\x25\x73" "\n",
+mType.c_str());fprintf(stderr,
+"\x20\x20\x20\x20\x53\x75\x62\x74\x79\x70\x65\x3a\x20\x20\x20\x25\x73" "\n",
+mSubType.c_str());fprintf(stderr,
+"\x20\x20\x20\x20\x4e\x61\x6d\x65\x3a\x20\x20\x20\x20\x20\x20\x25\x73" "\n",
+mName.c_str());fprintf(stderr,
+"\x20\x20\x20\x20\x49\x44\x3a\x20\x20\x20\x20\x20\x20\x20\x20\x3c\x25\x73\x3e\x20\x25\x64" "\n"
+,mIdAsString.c_str(),mId);fprintf(stderr,
+"\x20\x20\x20\x20\x73\x3a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x25\x2e\x31\x30\x66" "\n"
+,mS);fprintf(stderr,
+"\x20\x20\x20\x20\x74\x3a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x25\x2e\x31\x30\x66" "\n"
+,mT);fprintf(stderr,
+"\x20\x20\x20\x20\x7a\x3a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x25\x2e\x31\x30\x66" "\n"
+,mZ);fprintf(stderr,
+"\x20\x20\x20\x20\x64\x69\x72\x65\x63\x74\x69\x6f\x6e\x3a\x20\x25\x64" "\n",mDir
+);fprintf(stderr,
+"\x20\x20\x20\x20\x64\x73\x3a\x20\x20\x20\x20\x20\x20\x20\x20\x25\x2e\x31\x30\x66" "\n"
+,mLength);fprintf(stderr,
+"\x20\x20\x20\x20\x48\x65\x61\x64\x69\x6e\x67\x3a\x20\x20\x20\x25\x2e\x31\x30\x66" "\n"
+,mHdg);fprintf(stderr,
+"\x20\x20\x20\x20\x50\x69\x74\x63\x68\x3a\x20\x20\x20\x20\x20\x25\x2e\x31\x30\x66" "\n"
+,mPitch);fprintf(stderr,
+"\x20\x20\x20\x20\x52\x6f\x6c\x6c\x3a\x20\x20\x20\x20\x20\x20\x25\x2e\x31\x30\x66" "\n"
+,mRoll);fprintf(stderr,
+"\x20\x20\x20\x20\x56\x61\x6c\x75\x65\x3a\x20\x20\x20\x20\x20\x25\x2e\x31\x30\x66" "\n"
+,mValue);fprintf(stderr,
+"\x20\x20\x20\x20\x44\x79\x6e\x61\x6d\x69\x63\x3a\x20\x20\x20\x25\x2e\x73" "\n",
+mIsDynamic?"\x74\x72\x75\x65":"\x66\x61\x6c\x73\x65");fprintf(stderr,
+"\x20\x20\x20\x20\x68\x61\x73\x4f\x75\x74\x6c\x69\x6e\x65\x3a\x20\x20\x20\x25\x64" "\n"
+,mHasOutline);fprintf(stderr,
+"\x20\x20\x20\x20\x68\x61\x73\x52\x65\x70\x65\x61\x74\x3a\x20\x20\x20\x20\x25\x64" "\n"
+,mHasRepeat);fprintf(stderr,
+"\x20\x20\x20\x20\x6d\x49\x6e\x58\x3a\x20\x20\x20\x20\x20\x20\x25\x2e\x31\x30\x66" "\n"
+,mInX);fprintf(stderr,
+"\x20\x20\x20\x20\x6d\x49\x6e\x59\x3a\x20\x20\x20\x20\x20\x20\x25\x2e\x31\x30\x66" "\n"
+,mInY);fprintf(stderr,
+"\x20\x20\x20\x20\x6d\x49\x6e\x5a\x3a\x20\x20\x20\x20\x20\x20\x25\x2e\x31\x30\x66" "\n"
+,mInZ);fprintf(stderr,
+"\x20\x20\x20\x20\x6d\x50\x61\x72\x65\x6e\x74\x3a\x20\x20\x20\x25\x70" "\n",
+getParent());if(mIsCircular){fprintf(stderr,
+"\x20\x20\x20\x20\x72\x61\x64\x69\x75\x73\x3a\x20\x20\x20\x20\x25\x2e\x31\x30\x66" "\n"
+,mRadius);fprintf(stderr,
+"\x20\x20\x20\x20\x64\x7a\x3a\x20\x20\x20\x20\x20\x20\x20\x20\x25\x2e\x31\x30\x66" "\n"
+,mSizeZ);}else{fprintf(stderr,
+"\x20\x20\x20\x20\x64\x78\x3a\x20\x20\x20\x20\x20\x20\x20\x20\x25\x2e\x31\x30\x66" "\n"
+,mSizeX);fprintf(stderr,
+"\x20\x20\x20\x20\x64\x79\x3a\x20\x20\x20\x20\x20\x20\x20\x20\x25\x2e\x31\x30\x66" "\n"
+,mSizeY);fprintf(stderr,
+"\x20\x20\x20\x20\x64\x7a\x3a\x20\x20\x20\x20\x20\x20\x20\x20\x25\x2e\x31\x30\x66" "\n"
+,mSizeZ);}}bool Object::read(ReaderXML*F3vnM){mType=F3vnM->getString(
+"\x74\x79\x70\x65");mSubType=F3vnM->getString("\x73\x75\x62\x74\x79\x70\x65");
+mName=F3vnM->getString("\x6e\x61\x6d\x65");mId=F3vnM->getUInt("\x69\x64");
+mIdAsString=F3vnM->getString("\x69\x64");mS=F3vnM->getDouble("\x73");mT=F3vnM->
+getDouble("\x74");mZ=F3vnM->getDouble("\x7a\x4f\x66\x66\x73\x65\x74");mLength=
+F3vnM->getDouble("\x76\x61\x6c\x69\x64\x4c\x65\x6e\x67\x74\x68");mDir=F3vnM->
+getString("\x6f\x72\x69\x65\x6e\x74\x61\x74\x69\x6f\x6e")=="\x2b"?
+ODR_DIRECTION_PLUS:(F3vnM->getString(
+"\x6f\x72\x69\x65\x6e\x74\x61\x74\x69\x6f\x6e")=="\x2d"?ODR_DIRECTION_MINUS:
+ODR_DIRECTION_NONE);mSizeX=F3vnM->getDouble("\x6c\x65\x6e\x67\x74\x68");mSizeY=
+F3vnM->getDouble("\x77\x69\x64\x74\x68");mRadius=F3vnM->getDouble(
+"\x72\x61\x64\x69\x75\x73");mSizeZ=F3vnM->getDouble("\x68\x65\x69\x67\x68\x74");
+mHdg=F3vnM->getDouble("\x68\x64\x67");mPitch=F3vnM->getDouble(
+"\x70\x69\x74\x63\x68");mRoll=F3vnM->getDouble("\x72\x6f\x6c\x6c");mValue=F3vnM
+->getDouble("\x76\x61\x6c\x75\x65");mIsDynamic=F3vnM->getString(
+"\x64\x79\x6e\x61\x6d\x69\x63")=="\x79\x65\x73";mHasOutline=false;mHasRepeat=
+false;const ReaderXML::AttribMap&BMyX5=F3vnM->getAllAttributes();mIsCircular=(
+BMyX5.find("\x72\x61\x64\x69\x75\x73")!=BMyX5.end());if((fabs(mSizeX)<1.0e-10)&&
+(fabs(mSizeY)<1.0e-10)&&(fabs(mRadius)>1.0e-10)){mSizeX=2.0*mRadius;mSizeY=
+mSizeX;mIsCircular=true;}return true;}Node*Object::getCopy(bool Mupxf){Node*
+dzamm=new Object(this);if(Mupxf)deepCopy(dzamm);return dzamm;}void Object::
+calcPrepareData(){RoadHeader*M8Gux=reinterpret_cast<RoadHeader*>(getParent());if
+(!M8Gux)return;GeoHeader*RTknE=reinterpret_cast<GeoHeader*>(M8Gux->
+getFirstGeoHeader());if(!RTknE)return;while(RTknE&&RTknE->getRight()&&(RTknE->
+mSEnd<mS))RTknE=reinterpret_cast<GeoHeader*>(RTknE->getRight());if(!RTknE)return
+;GeoNode*pWj2K=reinterpret_cast<GeoNode*>(RTknE->getChild());if(!pWj2K)return;
+pWj2K->st2xyh(mS,mT,mInX,mInY,mInH);mInH+=mHdg;mInZ=0.0;Elevation*j6B6g=
+reinterpret_cast<Elevation*>(M8Gux->getFirstElevation());while(j6B6g&&j6B6g->
+mSEnd<mS)j6B6g=reinterpret_cast<Elevation*>(j6B6g->getRight());if(j6B6g)mInZ=
+j6B6g->s2z(mS);mInZ+=mZ;}Repeat*Object::getFirstRepeat(){return reinterpret_cast
+<Repeat*>(getChild(ODR_OPCODE_REPEAT));}}

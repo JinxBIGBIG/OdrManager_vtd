@@ -1,0 +1,617 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="OdrManager_vtd"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="D:/MCworkspace/OdrManager_vtd/cmake-build-debug-mingw"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/Program Files/mingw6481/bin/mingw32-make.exe -f &quot;D:/MCworkspace/OdrManager_vtd/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="D:/Program Files/mingw6481/bin/mingw32-make.exe -f &quot;D:/MCworkspace/OdrManager_vtd/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Program Files/mingw6481/bin/mingw32-make.exe -f &quot;D:/MCworkspace/OdrManager_vtd/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Program Files/mingw6481/bin/mingw32-make.exe -f &quot;D:/MCworkspace/OdrManager_vtd/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ODrive.1.5.5">
+				<Option output="D:/MCworkspace/OdrManager_vtd/lib/libODrive.1.5.5.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/MCworkspace/OdrManager_vtd/cmake-build-debug-mingw"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DSWREVISION=&quot;version-1.5.5&quot;"/>
+					<Add option="-DWIN32"/>
+					<Add option="-D_USE_MATH_DEFINES"/>
+					<Add directory="D:/MCworkspace/OdrManager_vtd/inc"/>
+					<Add directory="D:/MCworkspace/OdrManager_vtd/inc/Nodes"/>
+					<Add directory="D:/MCworkspace/OdrManager_vtd/Public/inc"/>
+					<Add directory="D:/MCworkspace/OdrManager_vtd/Public/inc/BaseNodes"/>
+					<Add directory="D:/MCworkspace/OdrManager_vtd/inc/TinyXml"/>
+					<Add directory="D:/MCworkspace/OdrManager_vtd/OpenCRG/baselib/inc"/>
+					<Add directory="D:/MCworkspace/OdrManager_vtd/Projection/Proj4.9/include"/>
+					<Add directory="D:/Program Files/mingw6481/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="D:/Program Files/mingw6481/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="D:/Program Files/mingw6481/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="D:/Program Files/mingw6481/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="D:/Program Files/mingw6481/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="D:/Program Files/mingw6481/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/Program Files/mingw6481/bin/mingw32-make.exe -f &quot;D:/MCworkspace/OdrManager_vtd/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 ODrive.1.5.5"/>
+					<CompileFile command="D:/Program Files/mingw6481/bin/mingw32-make.exe -f &quot;D:/MCworkspace/OdrManager_vtd/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Program Files/mingw6481/bin/mingw32-make.exe -f &quot;D:/MCworkspace/OdrManager_vtd/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Program Files/mingw6481/bin/mingw32-make.exe -f &quot;D:/MCworkspace/OdrManager_vtd/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ODrive.1.5.5/fast">
+				<Option output="D:/MCworkspace/OdrManager_vtd/lib/libODrive.1.5.5.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/MCworkspace/OdrManager_vtd/cmake-build-debug-mingw"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DSWREVISION=&quot;version-1.5.5&quot;"/>
+					<Add option="-DWIN32"/>
+					<Add option="-D_USE_MATH_DEFINES"/>
+					<Add directory="D:/MCworkspace/OdrManager_vtd/inc"/>
+					<Add directory="D:/MCworkspace/OdrManager_vtd/inc/Nodes"/>
+					<Add directory="D:/MCworkspace/OdrManager_vtd/Public/inc"/>
+					<Add directory="D:/MCworkspace/OdrManager_vtd/Public/inc/BaseNodes"/>
+					<Add directory="D:/MCworkspace/OdrManager_vtd/inc/TinyXml"/>
+					<Add directory="D:/MCworkspace/OdrManager_vtd/OpenCRG/baselib/inc"/>
+					<Add directory="D:/MCworkspace/OdrManager_vtd/Projection/Proj4.9/include"/>
+					<Add directory="D:/Program Files/mingw6481/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="D:/Program Files/mingw6481/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="D:/Program Files/mingw6481/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="D:/Program Files/mingw6481/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="D:/Program Files/mingw6481/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="D:/Program Files/mingw6481/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/Program Files/mingw6481/bin/mingw32-make.exe -f &quot;D:/MCworkspace/OdrManager_vtd/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 ODrive.1.5.5/fast"/>
+					<CompileFile command="D:/Program Files/mingw6481/bin/mingw32-make.exe -f &quot;D:/MCworkspace/OdrManager_vtd/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Program Files/mingw6481/bin/mingw32-make.exe -f &quot;D:/MCworkspace/OdrManager_vtd/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Program Files/mingw6481/bin/mingw32-make.exe -f &quot;D:/MCworkspace/OdrManager_vtd/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="OpenDrive">
+				<Option output="D:/MCworkspace/OdrManager_vtd/lib/libOpenDrive.dll" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/MCworkspace/OdrManager_vtd/cmake-build-debug-mingw"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DSWREVISION=&quot;version-1.5.5&quot;"/>
+					<Add option="-DWIN32"/>
+					<Add option="-D_USE_MATH_DEFINES"/>
+					<Add directory="D:/MCworkspace/OdrManager_vtd/inc"/>
+					<Add directory="D:/MCworkspace/OdrManager_vtd/inc/Nodes"/>
+					<Add directory="D:/MCworkspace/OdrManager_vtd/Public/inc"/>
+					<Add directory="D:/MCworkspace/OdrManager_vtd/Public/inc/BaseNodes"/>
+					<Add directory="D:/MCworkspace/OdrManager_vtd/inc/TinyXml"/>
+					<Add directory="D:/MCworkspace/OdrManager_vtd/OpenCRG/baselib/inc"/>
+					<Add directory="D:/MCworkspace/OdrManager_vtd/Projection/Proj4.9/include"/>
+					<Add directory="D:/Program Files/mingw6481/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="D:/Program Files/mingw6481/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="D:/Program Files/mingw6481/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="D:/Program Files/mingw6481/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="D:/Program Files/mingw6481/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="D:/Program Files/mingw6481/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/Program Files/mingw6481/bin/mingw32-make.exe -f &quot;D:/MCworkspace/OdrManager_vtd/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 OpenDrive"/>
+					<CompileFile command="D:/Program Files/mingw6481/bin/mingw32-make.exe -f &quot;D:/MCworkspace/OdrManager_vtd/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Program Files/mingw6481/bin/mingw32-make.exe -f &quot;D:/MCworkspace/OdrManager_vtd/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Program Files/mingw6481/bin/mingw32-make.exe -f &quot;D:/MCworkspace/OdrManager_vtd/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="OpenDrive/fast">
+				<Option output="D:/MCworkspace/OdrManager_vtd/lib/libOpenDrive.dll" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/MCworkspace/OdrManager_vtd/cmake-build-debug-mingw"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DSWREVISION=&quot;version-1.5.5&quot;"/>
+					<Add option="-DWIN32"/>
+					<Add option="-D_USE_MATH_DEFINES"/>
+					<Add directory="D:/MCworkspace/OdrManager_vtd/inc"/>
+					<Add directory="D:/MCworkspace/OdrManager_vtd/inc/Nodes"/>
+					<Add directory="D:/MCworkspace/OdrManager_vtd/Public/inc"/>
+					<Add directory="D:/MCworkspace/OdrManager_vtd/Public/inc/BaseNodes"/>
+					<Add directory="D:/MCworkspace/OdrManager_vtd/inc/TinyXml"/>
+					<Add directory="D:/MCworkspace/OdrManager_vtd/OpenCRG/baselib/inc"/>
+					<Add directory="D:/MCworkspace/OdrManager_vtd/Projection/Proj4.9/include"/>
+					<Add directory="D:/Program Files/mingw6481/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="D:/Program Files/mingw6481/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="D:/Program Files/mingw6481/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="D:/Program Files/mingw6481/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="D:/Program Files/mingw6481/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="D:/Program Files/mingw6481/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/Program Files/mingw6481/bin/mingw32-make.exe -f &quot;D:/MCworkspace/OdrManager_vtd/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 OpenDrive/fast"/>
+					<CompileFile command="D:/Program Files/mingw6481/bin/mingw32-make.exe -f &quot;D:/MCworkspace/OdrManager_vtd/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Program Files/mingw6481/bin/mingw32-make.exe -f &quot;D:/MCworkspace/OdrManager_vtd/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Program Files/mingw6481/bin/mingw32-make.exe -f &quot;D:/MCworkspace/OdrManager_vtd/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="D:/MCworkspace/OdrManager_vtd/cmake-build-debug-mingw"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/Program Files/mingw6481/bin/mingw32-make.exe -f &quot;D:/MCworkspace/OdrManager_vtd/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="D:/Program Files/mingw6481/bin/mingw32-make.exe -f &quot;D:/MCworkspace/OdrManager_vtd/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Program Files/mingw6481/bin/mingw32-make.exe -f &quot;D:/MCworkspace/OdrManager_vtd/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Program Files/mingw6481/bin/mingw32-make.exe -f &quot;D:/MCworkspace/OdrManager_vtd/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="D:/MCworkspace/OdrManager_vtd/cmake-build-debug-mingw"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/Program Files/mingw6481/bin/mingw32-make.exe -f &quot;D:/MCworkspace/OdrManager_vtd/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="D:/Program Files/mingw6481/bin/mingw32-make.exe -f &quot;D:/MCworkspace/OdrManager_vtd/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Program Files/mingw6481/bin/mingw32-make.exe -f &quot;D:/MCworkspace/OdrManager_vtd/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Program Files/mingw6481/bin/mingw32-make.exe -f &quot;D:/MCworkspace/OdrManager_vtd/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/OpenCRG/baselib/src/crgContactPoint.c">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/OpenCRG/baselib/src/crgEvalpk.c">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/OpenCRG/baselib/src/crgEvaluv2xy.c">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/OpenCRG/baselib/src/crgEvalxy2uv.c">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/OpenCRG/baselib/src/crgEvalz.c">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/OpenCRG/baselib/src/crgLoader.c">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/OpenCRG/baselib/src/crgMgr.c">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/OpenCRG/baselib/src/crgMsg.c">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/OpenCRG/baselib/src/crgOptionMgmt.c">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/OpenCRG/baselib/src/crgPortability.c">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/OpenCRG/baselib/src/crgStatistics.c">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/src/BaseNodes/OdrBorder.cc">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/src/BaseNodes/OdrBridge.cc">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/src/BaseNodes/OdrControlEntry.cc">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/src/BaseNodes/OdrController.cc">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/src/BaseNodes/OdrCornerInertial.cc">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/src/BaseNodes/OdrCornerLocal.cc">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/src/BaseNodes/OdrCornerReference.cc">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/src/BaseNodes/OdrCornerRelative.cc">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/src/BaseNodes/OdrCornerRoad.cc">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/src/BaseNodes/OdrCrossfall.cc">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/src/BaseNodes/OdrDataQuality.cc">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/src/BaseNodes/OdrElevation.cc">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/src/BaseNodes/OdrErrorDesc.cc">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/src/BaseNodes/OdrGenericNode.cc">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/src/BaseNodes/OdrGeoHeader.cc">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/src/BaseNodes/OdrGeoNode.cc">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/src/BaseNodes/OdrGeoReference.cc">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/src/BaseNodes/OdrHeader.cc">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/src/BaseNodes/OdrJuncController.cc">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/src/BaseNodes/OdrJuncGroup.cc">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/src/BaseNodes/OdrJuncHeader.cc">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/src/BaseNodes/OdrJuncLaneLink.cc">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/src/BaseNodes/OdrJuncLink.cc">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/src/BaseNodes/OdrJuncPriority.cc">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/src/BaseNodes/OdrJuncRef.cc">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/src/BaseNodes/OdrLane.cc">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/src/BaseNodes/OdrLaneAccess.cc">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/src/BaseNodes/OdrLaneBorder.cc">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/src/BaseNodes/OdrLaneHeight.cc">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/src/BaseNodes/OdrLaneLink.cc">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/src/BaseNodes/OdrLaneMaterial.cc">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/src/BaseNodes/OdrLaneOffset.cc">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/src/BaseNodes/OdrLaneRule.cc">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/src/BaseNodes/OdrLaneSection.cc">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/src/BaseNodes/OdrLaneSpeed.cc">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/src/BaseNodes/OdrLaneValidity.cc">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/src/BaseNodes/OdrLaneVisibility.cc">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/src/BaseNodes/OdrLaneWidth.cc">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/src/BaseNodes/OdrLateralShape.cc">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/src/BaseNodes/OdrMarking.cc">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/src/BaseNodes/OdrMarkings.cc">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/src/BaseNodes/OdrNode.cc">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/src/BaseNodes/OdrObject.cc">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/src/BaseNodes/OdrObjectMaterial.cc">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/src/BaseNodes/OdrObjectOutline.cc">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/src/BaseNodes/OdrObjectRef.cc">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/src/BaseNodes/OdrOffset.cc">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/src/BaseNodes/OdrParkingSpace.cc">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/src/BaseNodes/OdrParkingSpaceMarking.cc">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/src/BaseNodes/OdrPositionInertial.cc">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/src/BaseNodes/OdrPositionRoad.cc">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/src/BaseNodes/OdrRailroadSwitch.cc">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/src/BaseNodes/OdrRawDataDesc.cc">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/src/BaseNodes/OdrReference.cc">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/src/BaseNodes/OdrRepeat.cc">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/src/BaseNodes/OdrRoadHeader.cc">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/src/BaseNodes/OdrRoadLink.cc">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/src/BaseNodes/OdrRoadMark.cc">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/src/BaseNodes/OdrRoadMarkExplicitLine.cc">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/src/BaseNodes/OdrRoadMarkLine.cc">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/src/BaseNodes/OdrRoadMarkSway.cc">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/src/BaseNodes/OdrRoadMarkType.cc">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/src/BaseNodes/OdrRoadSpeed.cc">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/src/BaseNodes/OdrRoadType.cc">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/src/BaseNodes/OdrSignal.cc">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/src/BaseNodes/OdrSignalDep.cc">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/src/BaseNodes/OdrSignalRef.cc">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/src/BaseNodes/OdrSuperelevation.cc">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/src/BaseNodes/OdrSurfaceCRG.cc">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/src/BaseNodes/OdrTrafficObject.cc">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/src/BaseNodes/OdrTunnel.cc">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/src/BaseNodes/OdrUserData.cc">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/src/Nodes/OdrGeoArc.cc">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/src/Nodes/OdrGeoLine.cc">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/src/Nodes/OdrGeoParamPoly.cc">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/src/Nodes/OdrGeoPoly.cc">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/src/Nodes/OdrGeoSpiral.cc">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/src/Nodes/OdrGeoSpiralBase.cc">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/src/Nodes/OdrGeoSpiralOdr.cc">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/src/OdrBbox.cc">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/src/OdrCoord.cc">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/src/OdrGeoCoord.cc">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/src/OdrHierCoord.cc">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/src/OdrLaneCoord.cc">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/src/OdrManager.cc">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/src/OdrManagerLite.cc">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/src/OdrParserCallback.cc">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/src/OdrPath.cc">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/src/OdrPosition.cc">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/src/OdrProjection.cc">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/src/OdrReader.cc">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/src/OdrReaderXML.cc">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/src/OdrRoadData.cc">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/src/OdrRoadQuery.cc">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/src/OdrTrackCoord.cc">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/src/TinyXml/tinystr.cpp">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/src/TinyXml/tinyxml.cpp">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/src/TinyXml/tinyxmlerror.cpp">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/src/TinyXml/tinyxmlparser.cpp">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/src/WKTNode.cc">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/src/WKTParser.cc">
+			<Option target="ODrive.1.5.5"/>
+			<Option target="OpenDrive"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/OdrManager_vtd/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

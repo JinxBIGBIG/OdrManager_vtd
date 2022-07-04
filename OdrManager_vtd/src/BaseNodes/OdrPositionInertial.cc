@@ -1,0 +1,28 @@
+
+#include "OdrPositionInertial.hh"
+#include "OdrReaderXML.hh"
+#include <stdio.h>
+#include <math.h>
+namespace OpenDrive{PositionInertial::PositionInertial():Node(
+"\x50\x6f\x73\x69\x74\x69\x6f\x6e\x49\x6e\x65\x72\x74\x69\x61\x6c"){mOpcode=
+ODR_OPCODE_POSITION_INERTIAL;mLevel=2;}PositionInertial::PositionInertial(
+PositionInertial*Nf2Ao):Node(Nf2Ao){mX=Nf2Ao->mX;mY=Nf2Ao->mY;mZ=Nf2Ao->mZ;mHdg=
+Nf2Ao->mHdg;mPitch=Nf2Ao->mPitch;mRoll=Nf2Ao->mRoll;}PositionInertial::~
+PositionInertial(){}void PositionInertial::printData()const{fprintf(stderr,
+"\x20\x20\x20\x20\x20\x20\x20\x20\x6d\x58\x3a\x20\x20\x20\x20\x20\x20\x25\x2e\x31\x30\x6c\x66" "\n"
+,mX);fprintf(stderr,
+"\x20\x20\x20\x20\x20\x20\x20\x20\x6d\x59\x3a\x20\x20\x20\x20\x20\x20\x25\x2e\x31\x30\x6c\x66" "\n"
+,mY);fprintf(stderr,
+"\x20\x20\x20\x20\x20\x20\x20\x20\x6d\x5a\x3a\x20\x20\x20\x20\x20\x20\x25\x2e\x31\x30\x6c\x66" "\n"
+,mZ);fprintf(stderr,
+"\x20\x20\x20\x20\x20\x20\x20\x20\x6d\x48\x64\x67\x3a\x20\x20\x20\x20\x25\x2e\x31\x30\x6c\x66" "\n"
+,mHdg);fprintf(stderr,
+"\x20\x20\x20\x20\x20\x20\x20\x20\x6d\x50\x69\x74\x63\x68\x3a\x20\x20\x25\x2e\x31\x30\x6c\x66" "\n"
+,mPitch);fprintf(stderr,
+"\x20\x20\x20\x20\x20\x20\x20\x20\x6d\x52\x6f\x6c\x6c\x3a\x20\x20\x20\x25\x2e\x31\x30\x6c\x66" "\n"
+,mRoll);}bool PositionInertial::read(ReaderXML*F3vnM){mX=F3vnM->getDouble("\x78"
+);mY=F3vnM->getDouble("\x79");mZ=F3vnM->getDouble("\x7a");mHdg=F3vnM->getDouble(
+"\x68\x64\x67");mPitch=F3vnM->getDouble("\x70\x69\x74\x63\x68");mRoll=F3vnM->
+getDouble("\x72\x6f\x6c\x6c");return true;}Node*PositionInertial::getCopy(bool 
+Mupxf){Node*dzamm=new PositionInertial(this);if(Mupxf)deepCopy(dzamm);return 
+dzamm;}}

@@ -1,0 +1,23 @@
+
+#include "OdrJuncController.hh"
+#include "OdrController.hh"
+#include "OdrReaderXML.hh"
+#include <stdio.h>
+namespace OpenDrive{JuncController::JuncController():Node(
+"\x4a\x75\x6e\x63\x43\x6f\x6e\x74\x72\x6f\x6c\x6c\x65\x72"),mController(0){
+mOpcode=ODR_OPCODE_JUNCTION_CONTROL;mLevel=1;}JuncController::~JuncController(){
+}void JuncController::printData()const{fprintf(stderr,
+"\x20\x20\x20\x20\x49\x44\x3a\x20\x20\x20\x20\x20\x20\x20\x3c\x25\x73\x3e\x20\x25\x64" "\n"
+,mIdAsString.c_str(),mId);fprintf(stderr,
+"\x20\x20\x20\x20\x54\x79\x70\x65\x3a\x20\x20\x20\x20\x20\x25\x73" "\n",mType.
+c_str());fprintf(stderr,
+"\x20\x20\x20\x20\x53\x65\x71\x75\x65\x6e\x63\x65\x3a\x20\x25\x73" "\n",
+mSequence.c_str());if(mController)fprintf(stderr,
+"\x20\x20\x20\x20\x43\x6f\x6e\x74\x72\x6f\x6c\x6c\x65\x72\x3a\x20\x20\x20\x30\x78\x25\x6c\x78" "\n"
+,(unsigned long long)mController);}bool JuncController::read(ReaderXML*F3vnM){mId=
+F3vnM->getUInt("\x69\x64");mIdAsString=F3vnM->getString("\x69\x64");mType=F3vnM
+->getString("\x74\x79\x70\x65");mSequence=F3vnM->getString(
+"\x73\x65\x71\x75\x65\x6e\x63\x65");if(mController)fprintf(stderr,
+"\x20\x20\x20\x20\x4a\x75\x6e\x63\x43\x6f\x6e\x74\x72\x6f\x6c\x6c\x65\x72\x3a\x3a\x72\x65\x61\x64\x3a\x20\x20\x20\x69\x64\x3d\x25\x64" "\n"
+,mId);return true;}void JuncController::setController(Node*xpKIZ){mController=
+reinterpret_cast<Controller*>(xpKIZ);}}

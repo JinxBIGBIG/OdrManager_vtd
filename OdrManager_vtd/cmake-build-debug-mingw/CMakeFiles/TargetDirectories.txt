@@ -1,0 +1,4 @@
+D:/MCworkspace/OdrManager_vtd/cmake-build-debug-mingw/CMakeFiles/ODrive.1.5.5.dir
+D:/MCworkspace/OdrManager_vtd/cmake-build-debug-mingw/CMakeFiles/OpenDrive.dir
+D:/MCworkspace/OdrManager_vtd/cmake-build-debug-mingw/CMakeFiles/edit_cache.dir
+D:/MCworkspace/OdrManager_vtd/cmake-build-debug-mingw/CMakeFiles/rebuild_cache.dir
