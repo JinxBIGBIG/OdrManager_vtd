@@ -1,0 +1,14 @@
+原则：在之前的posinfo.cpp和posinfo.hpp文件中新增/替换某些函数；之前文件里面的函数不要删除。
+
+新增/替换函数内容如下：
+
+posinfo.cpp文件：
+1、getInertialPosInfo函数中增加了一些内容，需要用本文件中的getInertialPosInfo函数替换之前的此函数；
+2、isSameDirectionWithRoad函数、isInSce2_45_6函数、isInSce2_45_7函数、isInSce2_45_8函数、
+以及isInSce2_45_9函数、isInSce2_46_7函数、isInSce2_46_8函数、isInSce2_59_2函数需要添加到posInfo.cpp文件中；
+
+posinfo.hpp文件：
+1、将本文件中的#include...全部粘贴复制，替换掉之前的；
+2、posInfo函数有新增的内容，需要用本文件的posInfo结构体替换掉之前的；
+3、参考本文件，增加isSameDirectionWithRoad函数、isInSce2_45_6函数、isInSce2_45_7函数、isInSce2_45_8函数、
+以及isInSce2_45_9函数、isInSce2_46_7函数、isInSce2_46_8函数、isInSce2_59_2函数的声明；

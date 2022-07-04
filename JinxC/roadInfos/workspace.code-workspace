@@ -1,0 +1,155 @@
+{
+	"folders": [
+		{
+			"path": "..\\..\\beautifulCodes"
+		},
+		{
+			"path": "..\\..\\simpleDocs"
+		},
+		{
+			"path": "..\\..\\Downloads\\OdrManager\\OdrManager"
+		},
+		{
+			"path": "..\\..\\Downloads\\map-master"
+		},
+		{
+			"path": "..\\..\\Downloads\\esmini-master"
+		},
+		{
+			"path": ".."
+		},
+		{
+			"path": "..\\..\\Downloads\\V2X_docs\\CV2X场景和数据标准\\zhang-jie-cv2x-message-asn1-day1"
+		},
+		{
+			"path": "..\\..\\Downloads\\V2X_docs\\CV2X场景和数据标准\\zhang-jie-cv2x-message-asn1-day2"
+		},
+		{
+			"path": "c:\\Users\\jmang\\Desktop\\projectTemplate"
+		},
+		{
+			"path": "c:\\Users\\jmang\\Desktop\\projectTemplateMSVC"
+		},
+		{
+			"path": "c:\\Users\\jmang\\Desktop\\speedLimitEvaluate"
+		},
+		{
+			"path": "c:\\Users\\jmang\\Desktop\\dbc_asc_parser_tutorials"
+		},
+		{
+			"path": "E:\\dbc_asc_parsers\\dbc_asc_parser_gui"
+		},
+		{
+			"path": "E:\\calmcarSDK\\Calmcar_parse_only_vw"
+		},
+		{
+			"path": "E:\\VW_project\\VW_project_v3"
+		},
+		{
+			"path": "E:\\protobuf_study\\RDB_proto"
+		},
+		{
+			"path": "E:\\ubuntu_documents\\control_all_lights"
+		},
+		{
+			"path": "E:\\ubuntu_documents\\Develop_vtd2.2"
+		},
+		{
+			"path": "E:\\linuxSocket"
+		},
+		{
+			"path": "E:\\ubuntu_documents\\OpenDriveParser\\roadInfos"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"iosfwd": "cpp",
+			"iomanip": "cpp",
+			"ostream": "cpp",
+			"algorithm": "cpp",
+			"array": "cpp",
+			"atomic": "cpp",
+			"*.tcc": "cpp",
+			"bitset": "cpp",
+			"cctype": "cpp",
+			"cerrno": "cpp",
+			"cfloat": "cpp",
+			"chrono": "cpp",
+			"climits": "cpp",
+			"clocale": "cpp",
+			"cmath": "cpp",
+			"cstdarg": "cpp",
+			"cstddef": "cpp",
+			"cstdint": "cpp",
+			"cstdio": "cpp",
+			"cstdlib": "cpp",
+			"cstring": "cpp",
+			"ctime": "cpp",
+			"cwchar": "cpp",
+			"cwctype": "cpp",
+			"deque": "cpp",
+			"list": "cpp",
+			"map": "cpp",
+			"set": "cpp",
+			"string": "cpp",
+			"unordered_map": "cpp",
+			"vector": "cpp",
+			"exception": "cpp",
+			"functional": "cpp",
+			"iterator": "cpp",
+			"memory": "cpp",
+			"memory_resource": "cpp",
+			"numeric": "cpp",
+			"random": "cpp",
+			"ratio": "cpp",
+			"system_error": "cpp",
+			"tuple": "cpp",
+			"type_traits": "cpp",
+			"utility": "cpp",
+			"fstream": "cpp",
+			"initializer_list": "cpp",
+			"ios": "cpp",
+			"iostream": "cpp",
+			"istream": "cpp",
+			"limits": "cpp",
+			"locale": "cpp",
+			"new": "cpp",
+			"queue": "cpp",
+			"sstream": "cpp",
+			"stack": "cpp",
+			"stdexcept": "cpp",
+			"streambuf": "cpp",
+			"thread": "cpp",
+			"typeindex": "cpp",
+			"typeinfo": "cpp",
+			"condition_variable": "cpp",
+			"mutex": "cpp",
+			"xstring": "cpp",
+			"xutility": "cpp",
+			"bit": "cpp",
+			"charconv": "cpp",
+			"compare": "cpp",
+			"concepts": "cpp",
+			"format": "cpp",
+			"forward_list": "cpp",
+			"optional": "cpp",
+			"stop_token": "cpp",
+			"xfacet": "cpp",
+			"xhash": "cpp",
+			"xiosbase": "cpp",
+			"xlocale": "cpp",
+			"xlocbuf": "cpp",
+			"xlocinfo": "cpp",
+			"xlocmes": "cpp",
+			"xlocmon": "cpp",
+			"xlocnum": "cpp",
+			"xloctime": "cpp",
+			"xmemory": "cpp",
+			"xstddef": "cpp",
+			"xtr1common": "cpp",
+			"xtree": "cpp",
+			"complex": "cpp"
+		},
+		"python.pythonPath": "C:\\Users\\jmang\\anaconda3\\envs\\pytorch\\python.exe"
+	}
+}

@@ -1,0 +1,3 @@
+"D:\Program Files\JetBrains\CLion 2021.1.3\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\roadIDTest2.dir/objects.a
+"D:\Program Files\mingw6481\bin\ar.exe" cr CMakeFiles\roadIDTest2.dir/objects.a @CMakeFiles\roadIDTest2.dir\objects1.rsp
+"D:\Program Files\mingw6481\bin\g++.exe" -g -Wl,--whole-archive CMakeFiles\roadIDTest2.dir/objects.a -Wl,--no-whole-archive -o ..\..\bin\roadIDTest2.exe -Wl,--out-implib,libroadIDTest2.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\roadIDTest2.dir\linklibs.rsp

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="roadInfos"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\examples\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="D:/MCworkspace/JinxC/roadInfos/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/Program Files/mingw6481/bin/mingw32-make.exe -f &quot;D:/MCworkspace/JinxC/roadInfos/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="D:/Program Files/mingw6481/bin/mingw32-make.exe -f &quot;D:/MCworkspace/JinxC/roadInfos/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Program Files/mingw6481/bin/mingw32-make.exe -f &quot;D:/MCworkspace/JinxC/roadInfos/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Program Files/mingw6481/bin/mingw32-make.exe -f &quot;D:/MCworkspace/JinxC/roadInfos/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="D:/MCworkspace/JinxC/roadInfos/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/Program Files/mingw6481/bin/mingw32-make.exe -f &quot;D:/MCworkspace/JinxC/roadInfos/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="D:/Program Files/mingw6481/bin/mingw32-make.exe -f &quot;D:/MCworkspace/JinxC/roadInfos/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Program Files/mingw6481/bin/mingw32-make.exe -f &quot;D:/MCworkspace/JinxC/roadInfos/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Program Files/mingw6481/bin/mingw32-make.exe -f &quot;D:/MCworkspace/JinxC/roadInfos/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="D:/MCworkspace/JinxC/roadInfos/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/Program Files/mingw6481/bin/mingw32-make.exe -f &quot;D:/MCworkspace/JinxC/roadInfos/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="D:/Program Files/mingw6481/bin/mingw32-make.exe -f &quot;D:/MCworkspace/JinxC/roadInfos/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Program Files/mingw6481/bin/mingw32-make.exe -f &quot;D:/MCworkspace/JinxC/roadInfos/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Program Files/mingw6481/bin/mingw32-make.exe -f &quot;D:/MCworkspace/JinxC/roadInfos/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="roadIDTest2">
+				<Option output="D:/MCworkspace/JinxC/roadInfos/bin/roadIDTest2.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/MCworkspace/JinxC/roadInfos/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/MCworkspace/JinxC/roadInfos/OdrManager"/>
+					<Add directory="D:/MCworkspace/JinxC/roadInfos/include"/>
+					<Add directory="D:/Program Files/mingw6481/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="D:/Program Files/mingw6481/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="D:/Program Files/mingw6481/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="D:/Program Files/mingw6481/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="D:/Program Files/mingw6481/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="D:/Program Files/mingw6481/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/Program Files/mingw6481/bin/mingw32-make.exe -f &quot;D:/MCworkspace/JinxC/roadInfos/cmake-build-debug/examples/Makefile&quot;  VERBOSE=1 roadIDTest2"/>
+					<CompileFile command="D:/Program Files/mingw6481/bin/mingw32-make.exe -f &quot;D:/MCworkspace/JinxC/roadInfos/cmake-build-debug/examples/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Program Files/mingw6481/bin/mingw32-make.exe -f &quot;D:/MCworkspace/JinxC/roadInfos/cmake-build-debug/examples/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Program Files/mingw6481/bin/mingw32-make.exe -f &quot;D:/MCworkspace/JinxC/roadInfos/cmake-build-debug/examples/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="roadIDTest2/fast">
+				<Option output="D:/MCworkspace/JinxC/roadInfos/bin/roadIDTest2.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/MCworkspace/JinxC/roadInfos/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/MCworkspace/JinxC/roadInfos/OdrManager"/>
+					<Add directory="D:/MCworkspace/JinxC/roadInfos/include"/>
+					<Add directory="D:/Program Files/mingw6481/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="D:/Program Files/mingw6481/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="D:/Program Files/mingw6481/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="D:/Program Files/mingw6481/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="D:/Program Files/mingw6481/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="D:/Program Files/mingw6481/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/Program Files/mingw6481/bin/mingw32-make.exe -f &quot;D:/MCworkspace/JinxC/roadInfos/cmake-build-debug/examples/Makefile&quot;  VERBOSE=1 roadIDTest2/fast"/>
+					<CompileFile command="D:/Program Files/mingw6481/bin/mingw32-make.exe -f &quot;D:/MCworkspace/JinxC/roadInfos/cmake-build-debug/examples/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Program Files/mingw6481/bin/mingw32-make.exe -f &quot;D:/MCworkspace/JinxC/roadInfos/cmake-build-debug/examples/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Program Files/mingw6481/bin/mingw32-make.exe -f &quot;D:/MCworkspace/JinxC/roadInfos/cmake-build-debug/examples/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="D:/MCworkspace/JinxC/roadInfos/OdrManager/BaseNodes/OdrRoadHeader.hh">
+			<Option target="roadIDTest2"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/JinxC/roadInfos/examples/roadIDTest2.cpp">
+			<Option target="roadIDTest2"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/JinxC/roadInfos/src/tinyxml2.cpp">
+			<Option target="roadIDTest2"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/JinxC/roadInfos/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="D:/MCworkspace/JinxC/roadInfos/examples/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

@@ -1,0 +1,4 @@
+<ContactPoint id="1"> <PosPlayer player="Ego" dx="2.0" dy="0.7"/> </ContactPoint> 
+<ContactPoint id="2"> <PosPlayer player="Ego" dx="2.0" dy="-0.7"/> </ContactPoint>
+<ContactPoint id="3"> <PosPlayer player="Ego" dx="0.0" dy="-0.7"/> </ContactPoint>
+<ContactPoint id="4"> <PosPlayer player="Ego" dx="0.0" dy="0.7"/> </ContactPoint>
